@@ -1,12 +1,16 @@
-import './globals.css';
-import { Space_Grotesk } from 'next/font/google';
-const spaceGrotesk = Space_Grotesk({
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
-  variable: '--font-family',
-});
+// @ts-nocheck
 
-export const metadata = {
-  title: 'Gallery3',
-  description: 'Gallery3',
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
+
+export default nextConfig;
