@@ -1,7 +1,5 @@
 // @ts-check
 
-import path from 'path';
-
 /**
  * @type {import('next').NextConfig}
  */
@@ -12,10 +10,6 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  webpack(config) {
-    config.resolve.alias['@'] = path.resolve(process.cwd(), 'src');
-    return config;
   },
 };
 
