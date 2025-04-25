@@ -11,11 +11,9 @@ export const metadata = {
   description: 'Gallery3',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+// Move RootLayout to a separate file like app/layout.js if using Next.js 13+
+// or export as a named export if you want to keep it here:
+export function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} antialiased`}>
@@ -24,3 +22,13 @@ export default function RootLayout({
     </html>
   )
 }
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    appDir: true, // Enable the app directory for Next.js 13+
+  },
+};
+
+export default nextConfig;
