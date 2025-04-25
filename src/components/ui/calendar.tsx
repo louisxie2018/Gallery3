@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { DayPicker } from "react-day-picker"
-
+import { DayPicker, DayPickerProps } from "react-day-picker";
+import { RangeModifier } from "react-day-picker/dist/types/RangeModifier"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
@@ -60,13 +60,17 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("h-4 w-4", className)} {...props} />
+        PreviousMonthButton: ({ className, ...props }) => (
+          <button {...props} className={cn("p-2", className)}>
+            <ChevronLeft className={cn("h-4 w-4")} />
+          </button>
         ),
-        IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("h-4 w-4", className)} {...props} />
+        NextMonthButton: ({ className, ...props }) => (
+          <button {...props} className={cn("p-2", className)}>
+            <ChevronRight className={cn("h-4 w-4")} />
+          </button>
         ),
-      }}
+      } as Partial<DayPickerProps["components"]>}
       {...props}
     />
   )
