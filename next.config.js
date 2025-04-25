@@ -24,13 +24,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true, // Enable the app directory for Next.js 13+
-  },
-};
-
-export default nextConfig;
