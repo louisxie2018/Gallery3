@@ -14,7 +14,7 @@ export default function Intro() {
             Explore our curated projects as we measure medieval commerce through coin, cartography, and text. Dive into six unique explorations that reveal the intricate balance of historic trade.
           </p>
           <div className="flex space-x-6">
-            <Image src="/images/award1.png" alt="Award badge" width={60} height={60} />
+            <Image src="/images/box.png" alt="Box with hinged lid" width={60} height={60} />
             <Image src="/images/award2.png" alt="Award badge" width={60} height={60} />
             <Image src="/images/award3.png" alt="Award badge" width={60} height={60} />
           </div>
