@@ -1,12 +1,11 @@
 /* Byzantine Box Gallery - Styles based on jahunger.com menu page */
 
 :root {
-  --primary-bg: #043ba6; /* Deep blue background */
-  --secondary-bg: #ff7700; /* Bright orange background from menu page */
-  --tertiary-bg: #ff00cc; /* Pink accent color */
+  --primary-bg: #043ba6; /* Deep blue */
+  --accent-color: #ff3f1d; /* Bright red/orange */
+  --accent-color-secondary: #ff00cc; /* Pink */
   --text-color: #ffffff;
   --text-color-secondary: rgba(255, 255, 255, 0.8);
-  --accent-color: #0047ff; /* Blue accent color from menu page */
   --font-family: "Space Grotesk", sans-serif;
 }
 
@@ -24,22 +23,17 @@ body {
 
 /* Typography */
 h1, .hero-title {
-  font-family: var(--font-family);
-  font-size: 120px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 64px;
   font-weight: 700;
   color: var(--accent-color);
-  margin-bottom: 2rem;
-  line-height: 1.1;
-  text-align: center;
 }
 
 h2 {
-  font-family: var(--font-family);
+  font-family: "Space Grotesk", sans-serif;
   font-size: 48px;
   font-weight: 700;
   color: var(--accent-color);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
 }
 
 h3 {
@@ -51,7 +45,7 @@ h3 {
 }
 
 p {
-  font-family: var(--font-family);
+  font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 1.5rem;

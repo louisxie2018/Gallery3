@@ -1,16 +1,26 @@
-// @ts-check
+import './globals.css';
+import { Space_Grotesk } from 'next/font/google';
+const spaceGrotesk = Space_Grotesk({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-family',
+});
 
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+export const metadata = {
+  title: 'Gallery3',
+  description: 'Gallery3',
 };
 
-export default nextConfig;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={`${spaceGrotesk.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  )
+}
