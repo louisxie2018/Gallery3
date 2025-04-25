@@ -3,7 +3,7 @@
 import * as React from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { DayPicker, DayPickerProps } from "react-day-picker";
-import { RangeModifier } from "react-day-picker/dist/types/RangeModifier"
+
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
