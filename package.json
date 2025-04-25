@@ -9,6 +9,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
   "dependencies": {
     "next": "^15.1.4",
     "react": "^18.2.0",
