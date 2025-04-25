@@ -20,7 +20,7 @@ export default function Intro() {
           </div>
         </div>
         <Image
-          src="/images/intro-photo.jpg"
+          src="/images/box.png"
           alt="Gallery preview"
           width={700}
           height={500}
